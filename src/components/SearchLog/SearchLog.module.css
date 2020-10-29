@@ -1,0 +1,9 @@
+.SearchLog{
+ grid-area:s;
+ background:#26a69a;
+}
+.SearchLog .top {
+    display: flex;
+    justify-content: space-evenly;
+
+}

@@ -1,0 +1,15 @@
+.nav{
+grid-area: n;
+background:rgb(117, 204, 231);
+margin-right: 10px;
+}
+.item {
+    color:white;
+    margin: 15px;
+}
+
+.item.active {
+    color:rgb(178, 61, 61);
+    margin: 15px;
+}
+
