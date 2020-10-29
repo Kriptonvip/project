@@ -7,9 +7,10 @@ const App = () =>  {
   return (
     <div className='app-wrapper'>
       <Header />
-      <SearchLog />
       <NavBar />
-      <Profile />
+      <SearchLog />
+      {/* <Profile /> */}
+      <Dialogs />
     </div>
   );
 }
