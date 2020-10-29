@@ -2,7 +2,7 @@ import s from './Profile.module.css';
 import MyPosts from './MyPosts/MyPosts';
 
 const Profile = () => {
-    return <div className={s.content}>
+    return <div>
         <div>
             <img src="https://profailer.com/upload/iblock/978/97809ae5c3f4493a0c1aca1bb319f707.jpg" alt="TopBanner"></img>
         </div>
