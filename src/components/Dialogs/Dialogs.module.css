@@ -1,0 +1,33 @@
+
+.dialogs {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+.dialogsItems {
+    background:rgb(156, 178, 184);
+    padding: 10px;
+}
+.dialogs .people a{
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+    
+
+}
+.dialogs .active a{
+    color:gold;
+    
+}
+.dialog {
+    padding: 10px;
+    margin-left: 10px;
+    background:#75cce7;
+
+}
+ .headTitle{  
+    height: 30px;
+    background: #9cb2b8;
+    padding: 10px;
+    margin-top: -10px;
+    font-size: large;
+}

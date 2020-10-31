@@ -1,6 +1,7 @@
 .SearchLog{
  grid-area:s;
  background:#26a69a;
+ margin-bottom:10px;
 }
 .SearchLog .top {
     display: flex;
