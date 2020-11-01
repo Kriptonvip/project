@@ -4,8 +4,10 @@ import People from './People/People';
 
 
 const Dialogs = (props) => {
-    let peopleElements = props.peoplesData.map((p) => (<People name={p.name} id={p.id} />))
-    let messageElements = props.messagesData.map((m) => (<Message message={m.message} />))
+   
+    let peopleElements = props.state.peoplesData.map((p) => (<People name={p.name} id={p.id} />))
+  
+    let messageElements = props.state.messagesData.map((m) => (<Message message={m.message} />))
     return (
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>Контакты
