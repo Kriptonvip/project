@@ -12,9 +12,26 @@ margin-right: 10px;
     color:gold;
     margin: 15px;
 }
+.headTitle { 
+    background: #30a69a;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
 .item a{
     color:white;
     text-decoration: none;
 }
+.friends img {
+    border-radius: 50%;
+}
+.friends {width: 30%; text-align: center;}
+.allFriends {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
 
 

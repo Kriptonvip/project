@@ -1,4 +1,5 @@
 import './App.css';
+import React, { Component } from 'react'; 
 import Header from './components/Header/Header';
 import NavBar from './components/Nav/Nav';
 import News from './components/News/News';
@@ -14,14 +15,13 @@ const App = (props) => {
     <BrowserRouter>
       <div className='app-wrapper'>
         <Header />
-        <NavBar />
+        <NavBar state={props.state.NavBar} />
         <SearchLog />
         <div className='app-wrapper-content'>
           <Route path='/profile' render={() => <Profile 
             state={props.state.profilePage}/>} />
           <Route path='/dialogs' 
-          render={() => <Dialogs 
-          state={props.state.messagesPage}/> }/>
+          render={() => <Dialogs state={props.state.messagesPage}/> }/>
           <Route path='/news' render={() => <News />} />
           <Route path='/music' render={() => <Music />} />
           <Route path='/Settings' render={() => <Settings />} />
