@@ -7,6 +7,7 @@ const Header = () => {
         <p>React Social</p>
         </a>
         </header>
+
 }
 
 export default Header;

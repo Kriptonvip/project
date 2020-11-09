@@ -39,7 +39,7 @@ const Dialogs = (props) => {
 //     setTimeout(function () {
 //         el.style.cssText = 'height:auto; padding:0';
 //         el.style.cssText = 'height:' + el.scrollHeight + 'px';
-//     }, 0)
+//     }, 0);
 // }
 
 export default Dialogs;
