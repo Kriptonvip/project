@@ -11,23 +11,22 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Settings from './components/Settings/Settings';
 
 const App = (props) => {
+  
   return (    
-    <BrowserRouter>
       <div className='app-wrapper'>
         <Header />
         <NavBar state={props.state.NavBar} />
         <SearchLog />
         <div className='app-wrapper-content'>
           <Route path='/profile' render={() => <Profile 
-            state={props.state.profilePage}/>} />
+          state={props.state.profilePage} addNewSymbol={props.addNewSymbol} addPost={props.addPost}/>} />
           <Route path='/dialogs' 
-          render={() => <Dialogs state={props.state.messagesPage}/> }/>
+          render={() => <Dialogs state={props.state.messagesPage} addPost={props.addPost}/> }/>
           <Route path='/news' render={() => <News />} />
           <Route path='/music' render={() => <Music />} />
           <Route path='/Settings' render={() => <Settings />} />
         </div>
       </div>
-    </BrowserRouter>
   );
 }
 

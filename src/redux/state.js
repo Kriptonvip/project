@@ -1,10 +1,16 @@
+let rerenderEntireTree = () => {
+    console.log('State is change')
+}
 let state = {
+    
     profilePage: {
         postsData: [
             { id: 1, message: 'Hi how are you', likesCount: 12 },
             { id: 2, message: 'Hi i`am ok', likesCount: 14 },
-            { id: 3, message: 'Let`s go to swim', likesCount: 19 }]
-    },
+            { id: 3, message: 'Let`s go to swim', likesCount: 19 }],
+            newPostText : 'itcamasutra.ru'
+        },
+    
     messagesPage: {
         peoplesData: [
             { id: 1, name: 'Оля' },
@@ -28,6 +34,27 @@ let state = {
             { id: 3, name: 'Рома', img: 'https://avatars.mds.yandex.net/get-kino-vod-users-avatar/33806/1560042-07-589406.jpg/80x80'},
         ]
     }
+}
+
+window.state = state;
+export const addPost = () => {
+    let newPost = {
+        id: 5,
+        message: state.profilePage.newPostText,
+        likesCount: 12
+    };
+    state.profilePage.postsData.push(newPost);
+    state.profilePage.newPostText = '';
+    rerenderEntireTree(state);
+    
+};
+export const addNewSymbol = (newText) => {    
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
+}
+
+export const subscribe = (observer) => {
+    rerenderEntireTree = observer;
 }
 
 export default state
