@@ -1,14 +1,14 @@
 import './App.css';
 import React, { Component } from 'react'; 
-import Header from './components/Header/Header';
-import NavBar from './components/Nav/Nav';
-import News from './components/News/News';
-import Music from './components/Music/Music';
-import Profile from './components/Profile/Profile';
-import Dialogs from './components/Dialogs/Dialogs';
-import SearchLog from './components/SearchLog/SearchLog';
+import Header from './components1/Header/Header';
+import NavBar from './components1/Nav/Nav';
+import News from './components1/News/News';
+import Music from './components1/Music/Music';
+import Profile from './components1/Profile/Profile';
+import Dialogs from './components1/Dialogs/Dialogs';
+import SearchLog from './components1/SearchLog/SearchLog';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Settings from './components/Settings/Settings';
+import Settings from './components1/Settings/Settings';
 
 const App = (props) => {
   
