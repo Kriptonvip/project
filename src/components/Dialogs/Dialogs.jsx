@@ -31,6 +31,7 @@ const Dialogs = (props) => {
         </div>
     )
 }
+<<<<<<< HEAD
 // функция авто - расширения окна ввода сообщений
 // let textarea = document.querySelector('textarea');
 // textarea.addEventListener('keydown', autosize);
@@ -41,5 +42,7 @@ const Dialogs = (props) => {
 //         el.style.cssText = 'height:' + el.scrollHeight + 'px';
 //     }, 0);
 // }
+=======
+>>>>>>> 368893ac81f34edddf634c8a57443e5b33bf0dad
 
 export default Dialogs;
