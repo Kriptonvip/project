@@ -7,7 +7,7 @@ import Music from './components/Music/Music';
 import Profile from './components/Profile/Profile';
 import Dialogs from './components/Dialogs/Dialogs';
 import SearchLog from './components/SearchLog/SearchLog';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Settings from './components/Settings/Settings';
 
 const App = (props) => {
@@ -19,7 +19,7 @@ const App = (props) => {
         <SearchLog />
         <div className='app-wrapper-content'>
           <Route path='/profile' render={() => <Profile 
-          state={props.state.profilePage} addNewSymbol={props.addNewSymbol} addPost={props.addPost}/>} />
+          state={props.state.profilePage}/>} />
           <Route path='/dialogs' 
           render={() => <Dialogs state={props.state.messagesPage} addPost={props.addPost}/> }/>
           <Route path='/news' render={() => <News />} />

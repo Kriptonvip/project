@@ -1,16 +1,15 @@
-import state, { subscribe } from './redux/state';
+import state, { subscribe } from './redux/store';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { addNewSymbol, addPost } from './redux/state'
 import { BrowserRouter } from 'react-router-dom'
 
 
 let rerenderEntireTree = (state) => {
   ReactDOM.render(
     <BrowserRouter>
-      <App state={state} addPost={addPost} addNewSymbol={addNewSymbol} />
+      <App state={state}/>
     </BrowserRouter>,
     document.getElementById('root')
   );

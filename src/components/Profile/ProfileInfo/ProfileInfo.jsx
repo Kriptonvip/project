@@ -5,11 +5,10 @@ const ProfileInfo = (props) => {
     let newPostElement = React.createRef();  
     let NewPostText = () => {
         let text = newPostElement.current.value;
-        props.addNewSymbol(text);
-        
+        props.state.SetNewPostText(text);
     }
     let addPost = () => {
-    props.addPost();    
+        props.state.SetNewMessage();    
     };
     return (
         <div>
@@ -17,7 +16,7 @@ const ProfileInfo = (props) => {
             <div>
                 <img src="https://cdn1.flamp.ru/7f5f69120ef00dd18ab3d36c000a9f15_300_300.jpg" alt="Avatar"></img>
                 <div>
-                    <div className={s.textDiv}><textarea ref={newPostElement} onChange={NewPostText} value={props.newPostText} />                    
+                    <div className={s.textDiv}><textarea ref={newPostElement} onChange={NewPostText} value={props.state.GetNewPostText()} />                    
                     <button onClick={addPost}>Add post</button>
                     </div>
                 </div>
